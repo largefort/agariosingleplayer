@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="titleScreen">
+        <h1>Agar.io Single Player</h1>
+        <button id="playButton">Play</button>
+        <button id="settingsButton">Settings</button>
+        <button id="customizeButton">Customize Player</button>
+    </div>
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Settings</h2>
+            <!-- Add any settings here -->
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" name="bgColor" value="#fafafa"><br>
+        </div>
+    </div>
+    <div id="customizeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Customize Player</h2>
+            <label for="playerColor">Player Color:</label>
+            <input type="color" id="playerColor" name="playerColor" value="#0000ff"><br>
+            <button id="applyCustomization">Apply</button>
+        </div>
+    </div>
     <canvas id="gameCanvas"></canvas>
     <div id="controls">
         <p>Use W, A, S, D or Arrow Keys to Move</p>
